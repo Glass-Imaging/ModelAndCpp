@@ -22,9 +22,22 @@
 		64BDAD452CAD451200ED3C88 /* ModelAndCpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ModelAndCpp; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		64BDAD5B2CAD464900ED3C88 /* Exceptions for "ModelAndCpp" folder in "ModelAndCpp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Wrapper.m,
+			);
+			target = 64BDAD442CAD451200ED3C88 /* ModelAndCpp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		64BDAD472CAD451200ED3C88 /* ModelAndCpp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				64BDAD5B2CAD464900ED3C88 /* Exceptions for "ModelAndCpp" folder in "ModelAndCpp" target */,
+			);
 			path = ModelAndCpp;
 			sourceTree = "<group>";
 		};
@@ -94,6 +107,7 @@
 				TargetAttributes = {
 					64BDAD442CAD451200ED3C88 = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 					};
 				};
 			};
@@ -248,10 +262,13 @@
 		64BDAD4D2CAD451200ED3C88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8FLAF8NUL;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ModelAndCpp/ModelAndCpp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -259,10 +276,12 @@
 		64BDAD4E2CAD451200ED3C88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8FLAF8NUL;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ModelAndCpp/ModelAndCpp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import CoreML
 
-print("Hello, World!")
+let model = try! Matcher_512x256()
 
+
+print("All done.")
